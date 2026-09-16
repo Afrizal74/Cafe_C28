@@ -1,0 +1,1431 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>BR Cafe — Elevated Specialty Coffee</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f8f2ee",
+              "surface-bright": "#fef8f4",
+              "surface-container": "#f3ede9",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "inverse-surface": "#32302e",
+              "surface-dim": "#dfd9d5",
+              "primary-container": "#2b1810",
+              secondary: "#8e4e00",
+              "tertiary-fixed": "#ffdcc6",
+              "surface-variant": "#e7e1dd",
+              "on-primary-fixed-variant": "#5a4137",
+              "tertiary-container": "#2e1705",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1d1b19",
+              "on-secondary-container": "#723e00",
+              tertiary: "#060100",
+              "on-tertiary-container": "#a37d63",
+              primary: "#070100",
+              "secondary-container": "#fda95a",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#d3c3be",
+              "on-surface-variant": "#4f4440",
+              surface: "#fef8f4",
+              error: "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed": "#2e1500",
+              "on-primary-container": "#9c7e73",
+              "on-error": "#ffffff",
+              "surface-container-high": "#ede7e3",
+              "on-primary-fixed": "#2a170f",
+              "surface-tint": "#73584e",
+              "secondary-fixed": "#ffdcc1",
+              "on-tertiary-fixed-variant": "#5f402a",
+              "secondary-fixed-dim": "#ffb778",
+              "inverse-primary": "#e2bfb2",
+              outline: "#817470",
+              "inverse-on-surface": "#f6f0ec",
+              "primary-fixed-dim": "#e2bfb2",
+              "on-tertiary-fixed": "#2d1604",
+              "primary-fixed": "#ffdbcd",
+              "on-secondary-fixed-variant": "#6c3a00",
+              background: "#fef8f4",
+              "surface-container-highest": "#e7e1dd",
+              "tertiary-fixed-dim": "#eabda0",
+              "on-surface": "#1d1b19",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "space-xl": "2.5rem",
+              "gutter-lg": "2rem",
+              "gutter-sm": "1rem",
+              "space-sm": "0.5rem",
+              gutter: "1.5rem",
+              "space-lg": "1.5rem",
+              margin: "1.5rem",
+              "margin-sm": "1rem",
+              "margin-lg": "4rem",
+              "space-xs": "0.25rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "body-md": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "headline-md": ["Playfair Display"],
+              "display-lg-mobile": ["Playfair Display"],
+              "title-md": ["Plus Jakarta Sans"],
+              "title-lg": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "display-lg": ["Playfair Display"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "headline-sm": ["Playfair Display"],
+              "headline-lg": ["Playfair Display"],
+              "headline-lg-mobile": ["Playfair Display"],
+            },
+            fontSize: {
+              "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+              "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+              "headline-md": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "500" },
+              ],
+              "display-lg-mobile": [
+                "38px",
+                {
+                  lineHeight: "46px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "600",
+                },
+              ],
+              "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+              "title-lg": ["18px", { lineHeight: "26px", fontWeight: "600" }],
+              "label-sm": [
+                "11px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "500",
+                },
+              ],
+              "display-lg": [
+                "56px",
+                {
+                  lineHeight: "64px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "label-md": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.06em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-sm": [
+                "22px",
+                { lineHeight: "30px", fontWeight: "600" },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.015em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "36px", fontWeight: "500" },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background font-body-md text-on-surface antialiased min-h-screen"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,24,16,0.04)] border-b border-outline-variant/30 transition-all duration-300"
+    >
+      <div
+        class="h-20 w-full max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md">
+          <a
+            class="flex items-center gap-space-sm group focus:outline-none"
+            data-path="philosophy"
+            href="#"
+            ><img
+              alt="BR Cafe Logo"
+              class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9HNTlTonNe1o0JpN_LYozBznw7WH5LUKuop8e1OYCrB0ZsBQ1Mikv3csVD5Xs6LQcJfLyozf0TKPopey3grG2cbRoq3gLB23e_zMhsDmlDZ4x8CTiSq01T_junS87CDrhLkgKfSRVE0G4bsmzvkqTbpqmiKNSRpO6i1_Qziynq56icDU8OoAYxfX6FHj0rlXKFnbYbSfd9ZaQYi9YUQ_46M3po5e3_Tus9hPD7MFCOVXXga7VxiK5"
+            /><span
+              class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary-container font-medium"
+              >BR CAFE</span
+            ></a
+          >
+        </div>
+        <nav
+          class="hidden lg:flex items-center gap-gutter-lg"
+          data-active-classes="text-primary-container font-bold border-b border-primary-container"
+        >
+          <a
+            aria-current="page"
+            class="uppercase tracking-[0.14em] pb-space-xs transition-colors duration-200 text-primary-container font-bold border-b border-primary-container"
+            data-path="philosophy"
+            href="#"
+            >Philosophy</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
+            data-path="membership-perks"
+            href="#"
+            >Membership Perks</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
+            data-path="menu-highlights"
+            href="#"
+            >Menu Highlights</a
+          ><a
+            class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
+            data-path="visit-us"
+            href="#"
+            >Visit Us</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="inline-flex items-center justify-center px-space-lg py-space-sm bg-primary-container text-surface hover:bg-tertiary text-label-md font-label-md uppercase tracking-[0.1em] rounded transition-all duration-200 shadow-[0_4px_20px_rgba(43,24,16,0.06)] hover:shadow-[0_8px_24px_rgba(43,24,16,0.12)]"
+            data-path="join-club"
+            href="#"
+            >Join Coffee Club</a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full">
+        <!-- SECTION 1: HERO SECTION -->
+        <section
+          class="relative w-full py-20 lg:py-28 px-margin lg:px-margin-lg bg-surface"
+        >
+          <div
+            class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center"
+          >
+            <!-- Left Column: Editorial Content -->
+            <div
+              class="lg:col-span-6 flex flex-col items-start space-y-6 lg:pr-6"
+            >
+              <!-- Bronze Pill Badge -->
+              <div
+                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20"
+              >
+                <span
+                  class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"
+                ></span>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-[0.14em]"
+                  >Est. 2024 · Artisanal Roastery</span
+                >
+              </div>
+              <!-- Main Headline -->
+              <h1
+                class="font-headline-lg text-headline-lg lg:text-[54px] lg:leading-[62px] text-primary-container tracking-tight"
+              >
+                Your Cozy Corner for
+                <span class="italic font-normal">Exceptional</span> Coffee
+              </h1>
+              <!-- Subheadline -->
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+              >
+                Thoughtfully roasted single-origin beans, hand-crafted pastries,
+                and an atmosphere bathed in natural light. Designed as your
+                serene sanctuary to work, read, or slow down.
+              </p>
+              <!-- CTA Action Row -->
+              <div
+                class="flex flex-wrap items-center gap-4 pt-2 w-full sm:w-auto"
+              >
+                <a
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary-container text-surface-bright rounded text-label-md font-label-md uppercase tracking-[0.12em] shadow-md hover:bg-tertiary transition-all duration-300 group"
+                  href="#coffee-club-cta"
+                >
+                  <span>Join Our Coffee Club</span>
+                  <span
+                    class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                    >arrow_forward</span
+                  >
+                </a>
+                <a
+                  class="inline-flex items-center justify-center gap-1.5 px-6 py-3.5 text-primary-container font-label-md text-label-md uppercase tracking-[0.12em] hover:text-secondary transition-colors underline decoration-primary-container/30 underline-offset-8 hover:decoration-secondary"
+                  href="#revelation-menu"
+                >
+                  <span>Explore Today's Roast</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >east</span
+                  >
+                </a>
+              </div>
+              <!-- Social Proof / Metrics Strip -->
+              <div
+                class="pt-8 mt-4 w-full grid grid-cols-3 gap-4 border-t border-outline-variant/30"
+              >
+                <div>
+                  <div class="flex items-center gap-1 text-secondary">
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary-container"
+                      >4.9</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-[18px]"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >star</span
+                    >
+                  </div>
+                  <p
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5"
+                  >
+                    Rating &amp; Review
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="font-headline-sm text-headline-sm text-primary-container"
+                  >
+                    100%
+                  </div>
+                  <p
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5"
+                  >
+                    Direct Trade
+                  </p>
+                </div>
+                <div>
+                  <div
+                    class="font-headline-sm text-headline-sm text-primary-container"
+                  >
+                    Daily
+                  </div>
+                  <p
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5"
+                  >
+                    Small Batch Roast
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Visual Showcase -->
+            <div class="lg:col-span-6 relative mt-10 lg:mt-0">
+              <div
+                class="relative rounded-3xl overflow-hidden shadow-2xl bg-surface-container aspect-[4/3] lg:aspect-[1.34/1]"
+              >
+                <img
+                  alt="Minimalist sun-drenched BR Cafe interior with warm oak tones"
+                  class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB14sGKJkviyWREtEV2KTCjsRLXx1PMazy6SfNhqLXL8gGIENRcNi2ef04VFzhl_2haI9rl0AecuLAIFjUfLys0pZDHvm7YxfggeWGXW7Nbj5VDtjbKZjl1HXO3LUw0tqUu3AtyluotMrdj6KAoxFeoxR5Le7RjDTweOaK8mPCXWOT5O3xy8k-e5AhdYqTbVhcW_MlKrtQtU_z_SMykjnKw2lD_v6K2ykmd18l8SLW9KUdYAto0GFd2"
+                />
+                <!-- Floating Decorative Badge -->
+                <div
+                  class="absolute bottom-6 left-6 bg-surface-bright/95 backdrop-blur-md px-5 py-3 rounded-full shadow-lg flex items-center gap-3 border border-outline-variant/20"
+                >
+                  <span class="relative flex h-2.5 w-2.5">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"
+                    ></span>
+                  </span>
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+                      >Open Daily</span
+                    >
+                    <span
+                      class="font-title-md text-title-md text-primary-container leading-none"
+                      >From 7:00 AM – 10:00 PM</span
+                    >
+                  </div>
+                </div>
+                <!-- Top-right Monogram Accent Tag -->
+                <div
+                  class="absolute top-6 right-6 w-12 h-12 rounded-full bg-primary-container text-surface flex items-center justify-center font-headline-sm text-base shadow-md"
+                >
+                  BR
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 2: MEMBERSHIP PERKS SECTION -->
+        <section
+          class="w-full py-24 px-margin lg:px-margin-lg bg-surface-container-low border-y border-outline-variant/30"
+          id="membership-perks"
+        >
+          <div class="max-w-[1440px] mx-auto">
+            <!-- Section Header -->
+            <div
+              class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center"
+            >
+              <span
+                class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-2"
+                >The Coffee Club</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary-container mb-4"
+              >
+                Crafted for Daily Rituals
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Elevate your daily brew into an intentional luxury. Enjoy
+                complimentary sips, curated privileges, and intimate community
+                roaster showcases.
+              </p>
+            </div>
+            <!-- 3 Perk Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <!-- Perk 1 -->
+              <div
+                class="group p-8 rounded-2xl bg-surface-bright border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary-container mb-6 group-hover:bg-primary-container group-hover:text-surface transition-colors duration-300"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >coffee</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold block mb-1"
+                    >Tier Benefit 01</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary-container mb-3"
+                  >
+                    Free Welcome Drink
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Begin your journey with a handcrafted double espresso,
+                    velvety flat white, or 24-hour cold brew entirely on the
+                    house upon activation.
+                  </p>
+                </div>
+                <div
+                  class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary-container font-label-md text-label-md uppercase tracking-wider"
+                >
+                  <span>Instant Redemption</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                </div>
+              </div>
+              <!-- Perk 2 -->
+              <div
+                class="group p-8 rounded-2xl bg-surface-bright border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary-container mb-6 group-hover:bg-primary-container group-hover:text-surface transition-colors duration-300"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >percent</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold block mb-1"
+                    >Tier Benefit 02</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary-container mb-3"
+                  >
+                    10% Off Every Brew
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Enjoy continuous member-tier pricing across our entire
+                    coffee bar repertoire, ceremonial matcha, seasonal tonics,
+                    and retail whole beans.
+                  </p>
+                </div>
+                <div
+                  class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary-container font-label-md text-label-md uppercase tracking-wider"
+                >
+                  <span>All Stores &amp; Online</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                </div>
+              </div>
+              <!-- Perk 3 -->
+              <div
+                class="group p-8 rounded-2xl bg-surface-bright border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div
+                    class="w-14 h-14 rounded-xl bg-surface-container flex items-center justify-center text-primary-container mb-6 group-hover:bg-primary-container group-hover:text-surface transition-colors duration-300"
+                  >
+                    <span class="material-symbols-outlined text-3xl"
+                      >workspace_premium</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold block mb-1"
+                    >Tier Benefit 03</span
+                  >
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary-container mb-3"
+                  >
+                    Exclusive Tasting Events
+                  </h3>
+                  <p class="font-body-md text-body-md text-on-surface-variant">
+                    Priority invitations to monthly intimate cuppings with head
+                    roasters and reserved access to experimental micro-lot
+                    releases.
+                  </p>
+                </div>
+                <div
+                  class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary-container font-label-md text-label-md uppercase tracking-wider"
+                >
+                  <span>Monthly Invitations</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Secondary CTA Block with Interactive Modal Trigger -->
+            <div
+              class="max-w-3xl mx-auto bg-surface-bright rounded-2xl p-8 lg:p-10 border border-primary-container/15 shadow-md flex flex-col md:flex-row items-center justify-between gap-6"
+              id="coffee-club-cta"
+            >
+              <div class="flex flex-col text-left">
+                <span
+                  class="font-label-md text-label-md uppercase tracking-widest text-secondary mb-1"
+                  >Ready for your ritual?</span
+                >
+                <h4
+                  class="font-headline-sm text-headline-sm text-primary-container"
+                >
+                  Claim Your Free Welcome Drink
+                </h4>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                >
+                  No monthly subscription fee. Just pure appreciation for fine
+                  beans.
+                </p>
+              </div>
+              <button
+                class="w-full md:w-auto px-8 py-3.5 bg-secondary text-surface-bright font-label-md text-label-md uppercase tracking-[0.14em] rounded hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 shadow-md whitespace-nowrap"
+                onclick="
+                  document
+                    .getElementById('signup-modal')
+                    .classList.remove('hidden')
+                "
+              >
+                Claim Welcome Drink
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 3: REVELATION MENU SECTION -->
+        <section
+          class="w-full py-24 px-margin lg:px-margin-lg bg-surface"
+          id="revelation-menu"
+        >
+          <div class="max-w-[1440px] mx-auto">
+            <!-- Section Header -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-outline-variant/30 pb-8"
+            >
+              <div>
+                <span
+                  class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary block mb-2"
+                  >Curated Offerings</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-primary-container"
+                >
+                  Revelation Menu
+                </h2>
+              </div>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0"
+              >
+                Seasonal harvests and artisanal pastry creations crafted with
+                uncompromised precision and unhurried patience.
+              </p>
+            </div>
+            <!-- 2x2 Grid of Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Menu Item 1 -->
+              <div
+                class="group bg-surface-bright rounded-2xl overflow-hidden border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row"
+              >
+                <div
+                  class="sm:w-1/2 aspect-square sm:aspect-auto relative overflow-hidden bg-surface-container"
+                >
+                  <img
+                    alt="Signature Iced Latte on travertine stone"
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBox4KK44bRY2AOnZm0k8vNo-2kKc99MqqbtR44rfP8TIhGROv-4Oj9_37t11oLzBzHnWKZL81Xn4izRxO-DcOauwVpSmFF9xZP-BA4KSIUHtzYrWG2lygPeIvySK35URngExDJMkhAYJA4LMSO-JLLFTtrUpHgA8mc7huMKgNqMYqwSEz6AGcuaxOkyh81KP6wsaG1EEcQcQpHiZogocnMjDXCKViUnHqUIJx5ei-yYHuoaUNXUYvR"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-primary-container text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
+                  >
+                    House Favorite
+                  </div>
+                </div>
+                <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary-container"
+                      >
+                        Signature Iced Latte
+                      </h3>
+                      <span
+                        class="font-title-lg text-title-lg text-primary-container font-bold"
+                        >$6.50</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
+                    >
+                      "Double shot Ethiopia Guji, cold-frothed organic oat milk,
+                      spiced vanilla bean infusion."
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-wrap gap-1.5 pt-4 border-t border-outline-variant/20"
+                  >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Ethiopia Guji</span
+                    >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Cold-Frothed</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Menu Item 2 -->
+              <div
+                class="group bg-surface-bright rounded-2xl overflow-hidden border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row"
+              >
+                <div
+                  class="sm:w-1/2 aspect-square sm:aspect-auto relative overflow-hidden bg-surface-container"
+                >
+                  <img
+                    alt="Manual Brew V60 in glass server"
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRtXs166LcT0GY2kJtitXrfSIgUyMRdOUIBInSLNmJa8EdQJM_ipvTvLO3MD4AMLTxPNRn1pJsXNFdwLTaRD81PpBCFbYXFu5wH2YEexagJWaMislRLAFUEdK48k2Hvvh3ARsGJEFKwCzsPDTusUH5HC1lg-gDEls0QvCe5B8griVWaj1eK5Ww7PhZP85WOQlDL011eme0vels__hpxTR7Br71fa5voQhXNTLle2njK4hoJ0uxcVah"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-secondary text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
+                  >
+                    Single Origin
+                  </div>
+                </div>
+                <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary-container"
+                      >
+                        Manual Brew V60
+                      </h3>
+                      <span
+                        class="font-title-lg text-title-lg text-primary-container font-bold"
+                        >$7.25</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
+                    >
+                      "Single-origin Colombia Geisha, notes of jasmine,
+                      bergamot, and crisp white peach."
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-wrap gap-1.5 pt-4 border-t border-outline-variant/20"
+                  >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Geisha Reserve</span
+                    >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Pour Over</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Menu Item 3 -->
+              <div
+                class="group bg-surface-bright rounded-2xl overflow-hidden border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row"
+              >
+                <div
+                  class="sm:w-1/2 aspect-square sm:aspect-auto relative overflow-hidden bg-surface-container"
+                >
+                  <img
+                    alt="Flaky Butter Croissant on artisanal speckled ceramic plate"
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkfkSz9WiMbXddOEEbcBLN6AzGs9QhrV9kwVJVki_paDe_DyPCho4CKGcjyjWpQ6PY0knabHeBU8wQoCnb5buIW1yOI00Gtjjyvtdl6EI9-Gtn0EeKjHU7pVk6sReFejBF1sy0mB6kIkDha2PUwUI_zd4jchvdttYGF5Y2-L30SNbywS0DDqu1Lr34urhhk8xuSegH-okdr8gsA66FGBtAkunIiSX9e28XnJhpS3Qnh5Ey7AlRj4gV"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-primary-container text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
+                  >
+                    Fresh Daily
+                  </div>
+                </div>
+                <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary-container"
+                      >
+                        Flaky Butter Croissant
+                      </h3>
+                      <span
+                        class="font-title-lg text-title-lg text-primary-container font-bold"
+                        >$5.25</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
+                    >
+                      "AOP Normandy butter, 72-hour slow fermentation, baked
+                      fresh each morning at dawn."
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-wrap gap-1.5 pt-4 border-t border-outline-variant/20"
+                  >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >AOP Butter</span
+                    >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Laminated</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Menu Item 4 -->
+              <div
+                class="group bg-surface-bright rounded-2xl overflow-hidden border border-primary-container/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col sm:flex-row"
+              >
+                <div
+                  class="sm:w-1/2 aspect-square sm:aspect-auto relative overflow-hidden bg-surface-container"
+                >
+                  <img
+                    alt="Cold Brew Rose drink infusion"
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter sepia-[0.15]"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBox4KK44bRY2AOnZm0k8vNo-2kKc99MqqbtR44rfP8TIhGROv-4Oj9_37t11oLzBzHnWKZL81Xn4izRxO-DcOauwVpSmFF9xZP-BA4KSIUHtzYrWG2lygPeIvySK35URngExDJMkhAYJA4LMSO-JLLFTtrUpHgA8mc7huMKgNqMYqwSEz6AGcuaxOkyh81KP6wsaG1EEcQcQpHiZogocnMjDXCKViUnHqUIJx5ei-yYHuoaUNXUYvR"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-secondary text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
+                  >
+                    Signature Seasonal
+                  </div>
+                </div>
+                <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary-container"
+                      >
+                        Cold Brew Rose
+                      </h3>
+                      <span
+                        class="font-title-lg text-title-lg text-primary-container font-bold"
+                        >$6.75</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
+                    >
+                      "24-hour slow steep, infused with organic damask rose
+                      water and hint of citrus peel."
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-wrap gap-1.5 pt-4 border-t border-outline-variant/20"
+                  >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Slow-Steeped</span
+                    >
+                    <span
+                      class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
+                      >Botanical</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 4: VISIT US SECTION -->
+        <section
+          class="w-full py-24 px-margin lg:px-margin-lg bg-surface-container-low border-t border-outline-variant/30"
+          id="visit-us"
+        >
+          <div
+            class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start"
+          >
+            <!-- Left Side: Location Details & Interactive Map Mockup -->
+            <div class="lg:col-span-6 flex flex-col space-y-6">
+              <div>
+                <span
+                  class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary block mb-2"
+                  >The Sanctuary</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-primary-container leading-tight"
+                >
+                  Come for the Coffee,<br class="hidden sm:inline" />Stay for
+                  the Vibe
+                </h2>
+              </div>
+              <!-- Address & Status Badge -->
+              <div
+                class="p-6 rounded-2xl bg-surface-bright border border-primary-container/10 flex flex-col gap-4"
+              >
+                <div class="flex items-start justify-between">
+                  <div class="flex items-start gap-3">
+                    <span
+                      class="material-symbols-outlined text-secondary mt-0.5"
+                      >location_on</span
+                    >
+                    <div>
+                      <h3
+                        class="font-title-lg text-title-lg text-primary-container"
+                      >
+                        BR Cafe Atelier
+                      </h3>
+                      <p
+                        class="font-body-md text-body-md text-on-surface-variant"
+                      >
+                        428 Artisan Lane, Historic District, Suite 100
+                      </p>
+                    </div>
+                  </div>
+                  <span
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/10 text-emerald-800 font-label-sm text-label-sm font-semibold"
+                  >
+                    <span
+                      class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"
+                    ></span>
+                    Open Now until 10:00 PM
+                  </span>
+                </div>
+                <div
+                  class="pt-3 border-t border-outline-variant/20 flex flex-col sm:flex-row sm:items-center justify-between text-body-sm font-body-sm text-on-surface-variant"
+                >
+                  <span>Hours: Mon – Sun: 7:00 AM – 10:00 PM</span>
+                  <span class="mt-1 sm:mt-0 text-primary-container font-medium"
+                    >Valet &amp; Street Parking Available</span
+                  >
+                </div>
+              </div>
+              <!-- Amenities Pill Tags -->
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-variant/60 text-on-surface font-label-sm text-label-sm uppercase tracking-wider"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >wifi</span
+                  >
+                  High-Speed WiFi
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-variant/60 text-on-surface font-label-sm text-label-sm uppercase tracking-wider"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >light_mode</span
+                  >
+                  Sunlit Seating
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-variant/60 text-on-surface font-label-sm text-label-sm uppercase tracking-wider"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >pets</span
+                  >
+                  Pet Friendly Patio
+                </span>
+                <span
+                  class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-variant/60 text-on-surface font-label-sm text-label-sm uppercase tracking-wider"
+                >
+                  <span class="material-symbols-outlined text-[16px]">eco</span>
+                  Oat &amp; Almond Alternatives
+                </span>
+              </div>
+              <!-- Minimalist Map Visual Representation -->
+              <div
+                class="relative w-full h-64 rounded-2xl overflow-hidden bg-surface-container border border-primary-container/10 p-6 flex flex-col justify-between"
+                data-location="428 Artisan Lane, Historic District, Suite 100"
+                style=""
+              >
+                <div
+                  class="absolute inset-0 opacity-15 bg-[radial-gradient(#2b1810_1px,transparent_1px)] [background-size:16px_16px]"
+                ></div>
+                <div class="relative z-10 flex items-center justify-between">
+                  <span
+                    class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant bg-surface-bright/80 backdrop-blur-sm px-3 py-1 rounded"
+                    >Transit: 3 min from Central Tram</span
+                  >
+                  <span
+                    class="material-symbols-outlined text-secondary text-2xl"
+                    >local_cafe</span
+                  >
+                </div>
+                <div
+                  class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-surface-bright/95 backdrop-blur p-4 rounded-xl shadow-md border border-outline-variant/20"
+                >
+                  <div>
+                    <p
+                      class="font-title-md text-title-md text-primary-container"
+                    >
+                      428 Artisan Lane
+                    </p>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Steps away from the historic botanical square.
+                    </p>
+                  </div>
+                  <a
+                    class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary-container text-surface-bright rounded text-label-md font-label-md uppercase tracking-wider hover:bg-tertiary transition-colors"
+                    href="https://maps.google.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <span>Get Directions</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >directions</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Right Side: 2-Photo Editorial Collage -->
+            <div
+              class="lg:col-span-6 relative flex flex-col space-y-6 pt-4 lg:pt-0"
+            >
+              <!-- Photo 1: Lifestyle / Creative regulars -->
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-xl aspect-[1.34/1] bg-surface-container group"
+              >
+                <img
+                  alt="Remote workers and creatives enjoying sunlit cafe atmosphere"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT48Wz2l9ET6pjqGtySLJHMBvLx0LNrnAp58IyEw5UgrnWlC8QzAlaiy-sy-uVBgKiJ-pnZ_mcpw8Rlvj2c3wVlgSkKi6Vb2zyI2BChstk1jjwbEjz3SRLCcU0FtWG5kjS-Be-KsLaKoQiBeh-eduXs9yRWHw2RDQ9ndslLFsvVzI-xJyUUXEaDPZJJlU06amVCP9jfflllRQl3vc7EmpA2SXpIcsjzBmYYGyjDC4x0Abl-K7ztoLT"
+                />
+                <div
+                  class="absolute bottom-4 left-4 bg-primary-container/85 backdrop-blur-md px-4 py-2 rounded-lg text-surface-bright"
+                >
+                  <p
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed"
+                  >
+                    Community &amp; Workspace
+                  </p>
+                  <p class="font-body-sm text-body-sm">
+                    Designed for thoughtful contemplation and connection.
+                  </p>
+                </div>
+              </div>
+              <!-- Photo 2: Latte Art Craftsmanship -->
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-xl aspect-[1.34/1] bg-surface-container group -mt-6 lg:-mt-10 lg:w-4/5 lg:self-end border-4 border-surface"
+              >
+                <img
+                  alt="Barista pouring artisanal latte art"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1op6JhjyAcZfNyanSkjKd1Asrm8YM6Nc3Ooi9MwK75jntgEIzqMN09pBr-wRTQ4MK-8ak2EcOuIBdCIMd4qjhiILRqP2XQRic_MsVOgHG9Dd5saEiVaHicB1qBtT7f0LwXxSPP9jxKmPtE1VOzc1o4cq97g2Hsn3vngs-puF9gzg13i9a2eV723PKguuteU8Qw2ifeRv6BZmeEJByeRDw0mRgOfhajmg--FIJpI8vHFNrq3z5HxSv"
+                />
+                <div
+                  class="absolute bottom-4 left-4 bg-surface-bright/90 backdrop-blur-md px-4 py-2 rounded-lg text-primary-container"
+                >
+                  <p
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+                  >
+                    Precision Craft
+                  </p>
+                  <p class="font-body-sm text-body-sm">
+                    Every pour balanced to silky, micro-foam perfection.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 5: FOOTER -->
+        <footer
+          class="w-full bg-primary-container text-surface-bright py-20 px-margin lg:px-margin-lg"
+        >
+          <div class="max-w-[1440px] mx-auto flex flex-col space-y-16">
+            <!-- Top Section: Brand & Newsletter -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-surface/10"
+            >
+              <!-- Brand Info -->
+              <div class="lg:col-span-5 flex flex-col space-y-6">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 rounded-full border border-surface/30 flex items-center justify-center font-headline-sm text-surface font-bold tracking-wider"
+                  >
+                    BR
+                  </div>
+                  <span
+                    class="font-headline-md text-headline-md text-surface tracking-wider uppercase"
+                    >BR CAFE</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-surface-variant max-w-sm"
+                >
+                  Elevating daily living through single-origin precision
+                  roasting, unhurried hospitality, and serene architectural
+                  spaces.
+                </p>
+                <!-- Social Icons -->
+                <div class="flex items-center gap-4 pt-2">
+                  <a
+                    aria-label="Instagram"
+                    class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
+                    href="#"
+                  >
+                    <span class="font-label-md text-label-md font-bold"
+                      >IG</span
+                    >
+                  </a>
+                  <a
+                    aria-label="X"
+                    class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
+                    href="#"
+                  >
+                    <span class="font-label-md text-label-md font-bold">X</span>
+                  </a>
+                  <a
+                    aria-label="TikTok"
+                    class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
+                    href="#"
+                  >
+                    <span class="font-label-md text-label-md font-bold"
+                      >TK</span
+                    >
+                  </a>
+                  <a
+                    aria-label="Spotify"
+                    class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
+                    href="#"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >graphic_eq</span
+                    >
+                  </a>
+                  <span
+                    class="font-label-sm text-label-sm text-surface-variant ml-2"
+                    >@br.cafe</span
+                  >
+                </div>
+              </div>
+              <!-- Newsletter Subscription Box -->
+              <div
+                class="lg:col-span-7 flex flex-col justify-center bg-surface/5 p-8 rounded-2xl border border-surface/10"
+              >
+                <span
+                  class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-container mb-2"
+                  >Private Cuppings &amp; Drops</span
+                >
+                <h4 class="font-headline-sm text-headline-sm text-surface mb-2">
+                  Get invited to reserve bean releases
+                </h4>
+                <p class="font-body-sm text-body-sm text-surface-variant mb-6">
+                  Receive rare harvest notes, invitations to closed door tasting
+                  workshops, and seasonal specials.
+                </p>
+                <form
+                  class="flex flex-col sm:flex-row gap-3"
+                  onsubmit="
+                    event.preventDefault();
+                    alert('Thank you for subscribing to BR Cafe.');
+                  "
+                >
+                  <input
+                    class="w-full px-4 py-3 rounded bg-surface text-primary-container placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary"
+                    placeholder="Enter your email address"
+                    required=""
+                    type="email"
+                  />
+                  <button
+                    class="px-7 py-3 bg-secondary text-surface font-label-md text-label-md uppercase tracking-wider rounded hover:bg-secondary-container hover:text-on-secondary-container transition-colors whitespace-nowrap shadow-md"
+                    type="submit"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Middle Section: Navigation Columns -->
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-8 text-surface-variant font-body-sm text-body-sm"
+            >
+              <div class="flex flex-col space-y-3">
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-surface font-semibold"
+                  >Coffee Repertoire</span
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#revelation-menu"
+                  >Single Origin Harvests</a
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#revelation-menu"
+                  >Pour Over V60 Profiles</a
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#revelation-menu"
+                  >Seasonal Cold Brews</a
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#revelation-menu"
+                  >Whole Bean Roasts</a
+                >
+              </div>
+              <div class="flex flex-col space-y-3">
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-surface font-semibold"
+                  >Experiences</span
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#membership-perks"
+                  >Coffee Club Privilege</a
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#membership-perks"
+                  >Roaster Cuppings</a
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#membership-perks"
+                  >Barista Masterclasses</a
+                >
+                <a
+                  class="hover:text-surface transition-colors"
+                  href="#membership-perks"
+                  >Private Venue Hire</a
+                >
+              </div>
+              <div class="flex flex-col space-y-3">
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-surface font-semibold"
+                  >About BR</span
+                >
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Direct-Trade Ethics</a
+                >
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Farms &amp; Origins</a
+                >
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Sustainability Report</a
+                >
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Careers &amp; Apprenticeship</a
+                >
+              </div>
+              <div class="flex flex-col space-y-3">
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-surface font-semibold"
+                  >Hours &amp; Location</span
+                >
+                <p class="text-surface">
+                  Monday – Sunday<br />7:00 AM – 10:00 PM
+                </p>
+                <p class="text-surface-variant">
+                  428 Artisan Lane, Suite 100<br />Historic District
+                </p>
+              </div>
+            </div>
+            <!-- Bottom Legal Line -->
+            <div
+              class="pt-8 border-t border-surface/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-surface-variant font-label-sm text-label-sm"
+            >
+              <p>
+                © 2025 BR Cafe Specialty Roasters. All rights reserved. Crafted
+                with care.
+              </p>
+              <div class="flex items-center gap-6">
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Privacy Notice</a
+                >
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Terms of Hospitality</a
+                >
+                <a class="hover:text-surface transition-colors" href="#"
+                  >Sourcing Index</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- SIGNUP MODAL DIALOG (Interactive micro-feature for perks CTA) -->
+        <div
+          class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm"
+          id="signup-modal"
+        >
+          <div
+            class="relative w-full max-w-lg bg-surface-bright rounded-2xl p-8 border border-primary-container/15 shadow-2xl"
+          >
+            <button
+              class="absolute top-5 right-5 text-on-surface-variant hover:text-primary-container"
+              onclick="
+                document.getElementById('signup-modal').classList.add('hidden')
+              "
+            >
+              <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+            <div class="text-left">
+              <div
+                class="w-12 h-12 rounded-xl bg-surface-container text-primary-container flex items-center justify-center mb-4"
+              >
+                <span class="material-symbols-outlined text-2xl">redeem</span>
+              </div>
+              <h3
+                class="font-headline-sm text-headline-sm text-primary-container mb-2"
+              >
+                Claim Your Welcome Drink
+              </h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                Sign up with your email to receive an instant barcode for your
+                complimentary espresso or slow cold brew at our Artisan Lane
+                atelier.
+              </p>
+              <form
+                class="flex flex-col gap-4"
+                onsubmit="
+                  event.preventDefault();
+                  alert('Welcome drink barcode sent to your inbox!');
+                  document
+                    .getElementById('signup-modal')
+                    .classList.add('hidden');
+                "
+              >
+                <div>
+                  <label
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1"
+                    >Full Name</label
+                  >
+                  <input
+                    class="w-full px-4 py-2.5 rounded bg-surface border border-outline-variant/60 font-body-sm text-body-sm focus:outline-none focus:border-secondary"
+                    placeholder="Elena Rostova"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1"
+                    >Email Address</label
+                  >
+                  <input
+                    class="w-full px-4 py-2.5 rounded bg-surface border border-outline-variant/60 font-body-sm text-body-sm focus:outline-none focus:border-secondary"
+                    placeholder="elena@example.com"
+                    required=""
+                    type="email"
+                  />
+                </div>
+                <div class="flex items-center gap-2 mt-1">
+                  <input
+                    class="rounded accent-primary-container"
+                    id="terms"
+                    required=""
+                    type="checkbox"
+                  />
+                  <label
+                    class="font-body-sm text-xs text-on-surface-variant"
+                    for="terms"
+                    >I agree to receive seasonal cupping invites from BR
+                    Cafe.</label
+                  >
+                </div>
+                <button
+                  class="w-full mt-2 py-3 bg-primary-container text-surface-bright font-label-md text-label-md uppercase tracking-[0.14em] rounded hover:bg-tertiary transition-colors shadow-md"
+                  type="submit"
+                >
+                  Issue Welcome Pass
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-space-xl"
+    >
+      <div
+        class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-lg py-space-xl"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-lg mb-space-xl">
+          <div class="md:col-span-1 flex flex-col gap-space-sm">
+            <div class="flex items-center gap-space-xs">
+              <img
+                alt="BR Cafe Logo"
+                class="h-7 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9HNTlTonNe1o0JpN_LYozBznw7WH5LUKuop8e1OYCrB0ZsBQ1Mikv3csVD5Xs6LQcJfLyozf0TKPopey3grG2cbRoq3gLB23e_zMhsDmlDZ4x8CTiSq01T_junS87CDrhLkgKfSRVE0G4bsmzvkqTbpqmiKNSRpO6i1_Qziynq56icDU8OoAYxfX6FHj0rlXKFnbYbSfd9ZaQYi9YUQ_46M3po5e3_Tus9hPD7MFCOVXXga7VxiK5"
+              /><span
+                class="font-headline-sm text-headline-sm text-primary-container tracking-wider uppercase"
+                >BR CAFE</span
+              >
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs"
+            >
+              A sanctuary dedicated to the unhurried craft of single-origin
+              cultivation, slow brews, and intentional community.
+            </p>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-md text-label-md uppercase tracking-[0.12em] text-primary-container mb-space-xs"
+              >Exploration</span
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
+              data-path="philosophy"
+              href="#"
+              >Our Philosophy</a
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
+              data-path="menu-highlights"
+              href="#"
+              >Seasonal Offerings</a
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
+              data-path="visit-us"
+              href="#"
+              >Café Locations</a
+            >
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-md text-label-md uppercase tracking-[0.12em] text-primary-container mb-space-xs"
+              >Membership</span
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
+              data-path="membership-perks"
+              href="#"
+              >The Coffee Club</a
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
+              data-path="membership-perks"
+              href="#"
+              >Roaster Allocations</a
+            ><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
+              data-path="membership-perks"
+              href="#"
+              >Private Cupping</a
+            >
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-md text-label-md uppercase tracking-[0.12em] text-primary-container mb-space-xs"
+              >Hours &amp; Ateliers</span
+            >
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              Monday – Friday: 7am — 6pm<br />Saturday – Sunday: 8am — 7pm
+            </p>
+            <p
+              class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs"
+            >
+              hello@brcafe.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"
+        >
+          <p class="font-body-sm text-body-sm">
+            © 2025 BR Cafe Specialty Roasters. All rights reserved.
+          </p>
+          <div class="flex items-center gap-space-lg font-body-sm text-body-sm">
+            <span>Privacy Policy</span><span>Terms of Service</span
+            ><span>Origin Transparency</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
