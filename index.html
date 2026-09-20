@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>BR Cafe — Elevated Specialty Coffee</title>
+    <title>C28 Daily Coffee</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -19,29 +20,17 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
     />
-    <style>
-      @layer base {
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        body {
-          overscroll-behavior: none;
-        }
-        main > :first-child {
-          margin-top: 0 !important;
-        }
-        main > :last-child {
-          margin-bottom: 0 !important;
-        }
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
+    <!-- Base styles -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
+    <!--
+      Custom design tokens.
+      Source of truth: js/tailwind.config.js (kept as reference file).
+      Inline here because Tailwind CDN only reads tailwind.config
+      synchronously from an inline script tag.
+    -->
+    <script>
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -208,14 +197,10 @@
             data-path="philosophy"
             href="#"
             ><img
-              alt="BR Cafe Logo"
+              alt="C28 Cafe Logo"
               class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9HNTlTonNe1o0JpN_LYozBznw7WH5LUKuop8e1OYCrB0ZsBQ1Mikv3csVD5Xs6LQcJfLyozf0TKPopey3grG2cbRoq3gLB23e_zMhsDmlDZ4x8CTiSq01T_junS87CDrhLkgKfSRVE0G4bsmzvkqTbpqmiKNSRpO6i1_Qziynq56icDU8OoAYxfX6FHj0rlXKFnbYbSfd9ZaQYi9YUQ_46M3po5e3_Tus9hPD7MFCOVXXga7VxiK5"
-            /><span
-              class="font-headline-sm text-headline-sm tracking-wider uppercase text-primary-container font-medium"
-              >BR CAFE</span
-            ></a
-          >
+              src="assets/images/Logo.png"
+          /></a>
         </div>
         <nav
           class="hidden lg:flex items-center gap-gutter-lg"
@@ -225,39 +210,39 @@
             aria-current="page"
             class="uppercase tracking-[0.14em] pb-space-xs transition-colors duration-200 text-primary-container font-bold border-b border-primary-container"
             data-path="philosophy"
-            href="#"
-            >Philosophy</a
+            href="#philosophy"
+            >Filosofi</a
           ><a
             class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
             data-path="membership-perks"
-            href="#"
-            >Membership Perks</a
+            href="#membership-perks"
+            >Membership</a
           ><a
             class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
             data-path="menu-highlights"
-            href="#"
-            >Menu Highlights</a
+            href="#revelation-menu"
+            >Menu</a
           ><a
             class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
             data-path="visit-us"
-            href="#"
-            >Visit Us</a
+            href="#visit-us"
+            >Toko</a
+          >
+          <a
+            class="font-label-md text-label-md uppercase tracking-[0.14em] text-on-surface-variant hover:text-primary-container pb-space-xs transition-colors duration-200"
+            data-path="Kontak"
+            href="#Kontak"
+            >Kontak</a
           >
         </nav>
         <div class="flex items-center gap-space-md">
           <a
             class="inline-flex items-center justify-center px-space-lg py-space-sm bg-primary-container text-surface hover:bg-tertiary text-label-md font-label-md uppercase tracking-[0.1em] rounded transition-all duration-200 shadow-[0_4px_20px_rgba(43,24,16,0.06)] hover:shadow-[0_8px_24px_rgba(43,24,16,0.12)]"
             data-path="join-club"
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfIwfEmZEaifXEHYIa0-2ngL-MAD4c_iJYkUnHyOcysCa0Lcw/viewform?usp=dialog"
+            target="_blank"
             >Join Coffee Club</a
           >
-          <div
-            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
-          >
-            <span class="material-symbols-outlined text-on-primary text-[18px]"
-              >person</span
-            >
-          </div>
         </div>
       </div>
     </header>
@@ -265,6 +250,7 @@
       <div class="flex flex-col w-full">
         <!-- SECTION 1: HERO SECTION -->
         <section
+          id="philosophy"
           class="relative w-full py-20 lg:py-28 px-margin lg:px-margin-lg bg-surface"
         >
           <div
@@ -283,23 +269,24 @@
                 ></span>
                 <span
                   class="font-label-sm text-label-sm uppercase tracking-[0.14em]"
-                  >Est. 2024 · Artisanal Roastery</span
+                  >Sejak. 2020 · Artisanal Roastery</span
                 >
               </div>
               <!-- Main Headline -->
               <h1
                 class="font-headline-lg text-headline-lg lg:text-[54px] lg:leading-[62px] text-primary-container tracking-tight"
               >
-                Your Cozy Corner for
-                <span class="italic font-normal">Exceptional</span> Coffee
+                <span class="italic font-normal">More Coffee</span>,<br /><span
+                  class="italic font-normal"
+                  >More Moments</span
+                >
               </h1>
               <!-- Subheadline -->
               <p
                 class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
               >
-                Thoughtfully roasted single-origin beans, hand-crafted pastries,
-                and an atmosphere bathed in natural light. Designed as your
-                serene sanctuary to work, read, or slow down.
+                Berawal dari kecintaan terhadap kopi berkualitas, C28 Cafe hadir
+                sebagai ruang temu yang nyaman bagi semua kalangan.
               </p>
               <!-- CTA Action Row -->
               <div
@@ -307,70 +294,14 @@
               >
                 <a
                   class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary-container text-surface-bright rounded text-label-md font-label-md uppercase tracking-[0.12em] shadow-md hover:bg-tertiary transition-all duration-300 group"
-                  href="#coffee-club-cta"
+                  href="#revelation-menu"
                 >
-                  <span>Join Our Coffee Club</span>
+                  <span>Lihat Menu</span>
                   <span
                     class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
                     >arrow_forward</span
                   >
                 </a>
-                <a
-                  class="inline-flex items-center justify-center gap-1.5 px-6 py-3.5 text-primary-container font-label-md text-label-md uppercase tracking-[0.12em] hover:text-secondary transition-colors underline decoration-primary-container/30 underline-offset-8 hover:decoration-secondary"
-                  href="#revelation-menu"
-                >
-                  <span>Explore Today's Roast</span>
-                  <span class="material-symbols-outlined text-[16px]"
-                    >east</span
-                  >
-                </a>
-              </div>
-              <!-- Social Proof / Metrics Strip -->
-              <div
-                class="pt-8 mt-4 w-full grid grid-cols-3 gap-4 border-t border-outline-variant/30"
-              >
-                <div>
-                  <div class="flex items-center gap-1 text-secondary">
-                    <span
-                      class="font-headline-sm text-headline-sm text-primary-container"
-                      >4.9</span
-                    >
-                    <span
-                      class="material-symbols-outlined text-[18px]"
-                      style="font-variation-settings: &quot;FILL&quot; 1"
-                      >star</span
-                    >
-                  </div>
-                  <p
-                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5"
-                  >
-                    Rating &amp; Review
-                  </p>
-                </div>
-                <div>
-                  <div
-                    class="font-headline-sm text-headline-sm text-primary-container"
-                  >
-                    100%
-                  </div>
-                  <p
-                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5"
-                  >
-                    Direct Trade
-                  </p>
-                </div>
-                <div>
-                  <div
-                    class="font-headline-sm text-headline-sm text-primary-container"
-                  >
-                    Daily
-                  </div>
-                  <p
-                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5"
-                  >
-                    Small Batch Roast
-                  </p>
-                </div>
               </div>
             </div>
             <!-- Right Column: Visual Showcase -->
@@ -402,7 +333,7 @@
                     >
                     <span
                       class="font-title-md text-title-md text-primary-container leading-none"
-                      >From 7:00 AM – 10:00 PM</span
+                      >From 8:00 AM – 10:00 PM</span
                     >
                   </div>
                 </div>
@@ -410,7 +341,7 @@
                 <div
                   class="absolute top-6 right-6 w-12 h-12 rounded-full bg-primary-container text-surface flex items-center justify-center font-headline-sm text-base shadow-md"
                 >
-                  BR
+                  C28
                 </div>
               </div>
             </div>
@@ -428,17 +359,17 @@
             >
               <span
                 class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-2"
-                >The Coffee Club</span
+                >C28 Coffee Club</span
               >
               <h2
                 class="font-headline-lg text-headline-lg text-primary-container mb-4"
               >
-                Crafted for Daily Rituals
+                Sempurnakan Rutinitas Harianmu
               </h2>
               <p class="font-body-md text-body-md text-on-surface-variant">
-                Elevate your daily brew into an intentional luxury. Enjoy
-                complimentary sips, curated privileges, and intimate community
-                roaster showcases.
+                Jadikan secangkir kopi harian Anda sebagai pengalaman mewah yang
+                dirancang khusus. Nikmati cicipan gratis, keuntungan eksklusif,
+                dan acara perkenalan komunitas yang hangat.
               </p>
             </div>
             <!-- 3 Perk Cards -->
@@ -457,17 +388,17 @@
                   </div>
                   <span
                     class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold block mb-1"
-                    >Tier Benefit 01</span
+                    >Benefit 01</span
                   >
                   <h3
                     class="font-headline-sm text-headline-sm text-primary-container mb-3"
                   >
-                    Free Welcome Drink
+                    Dapatkan Voucher Gratis
                   </h3>
                   <p class="font-body-md text-body-md text-on-surface-variant">
-                    Begin your journey with a handcrafted double espresso,
-                    velvety flat white, or 24-hour cold brew entirely on the
-                    house upon activation.
+                    Dapatkan poin dari setiap cangkir kopi yang Anda beli.
+                    Tukarkan poin yang terkumpul dengan voucher potongan harga
+                    atau menu gratis favorit Anda kapan saja.
                   </p>
                 </div>
                 <div
@@ -493,23 +424,23 @@
                   </div>
                   <span
                     class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold block mb-1"
-                    >Tier Benefit 02</span
+                    >Benefit 02</span
                   >
                   <h3
                     class="font-headline-sm text-headline-sm text-primary-container mb-3"
                   >
-                    10% Off Every Brew
+                    Diskon Minuman 10%
                   </h3>
                   <p class="font-body-md text-body-md text-on-surface-variant">
-                    Enjoy continuous member-tier pricing across our entire
-                    coffee bar repertoire, ceremonial matcha, seasonal tonics,
-                    and retail whole beans.
+                    Nikmati potongan harga langsung 10% untuk semua menu minuman
+                    favorit Anda tanpa syarat minimum belanja, khusus untuk
+                    setiap kunjungan member.
                   </p>
                 </div>
                 <div
                   class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary-container font-label-md text-label-md uppercase tracking-wider"
                 >
-                  <span>All Stores &amp; Online</span>
+                  <span>All Stores</span>
                   <span class="material-symbols-outlined text-[16px]"
                     >check_circle</span
                   >
@@ -529,23 +460,24 @@
                   </div>
                   <span
                     class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold block mb-1"
-                    >Tier Benefit 03</span
+                    >Benefit 03</span
                   >
                   <h3
                     class="font-headline-sm text-headline-sm text-primary-container mb-3"
                   >
-                    Exclusive Tasting Events
+                    Birthday Rewards
                   </h3>
                   <p class="font-body-md text-body-md text-on-surface-variant">
-                    Priority invitations to monthly intimate cuppings with head
-                    roasters and reserved access to experimental micro-lot
-                    releases.
+                    Rayakan hari spesial Anda bersama kami! Dapatkan voucher
+                    hadiah dan diskon khusus ulang tahun yang otomatis
+                    dikirimkan ke akun member Anda sebagai bentuk apresiasi
+                    kami.
                   </p>
                 </div>
                 <div
                   class="mt-6 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary-container font-label-md text-label-md uppercase tracking-wider"
                 >
-                  <span>Monthly Invitations</span>
+                  <span>Birthday</span>
                   <span class="material-symbols-outlined text-[16px]"
                     >check_circle</span
                   >
@@ -560,30 +492,30 @@
               <div class="flex flex-col text-left">
                 <span
                   class="font-label-md text-label-md uppercase tracking-widest text-secondary mb-1"
-                  >Ready for your ritual?</span
+                  >Siap Bergabung?</span
                 >
                 <h4
                   class="font-headline-sm text-headline-sm text-primary-container"
                 >
-                  Claim Your Free Welcome Drink
+                  Dapatkan Berbagai Promo Menarik
                 </h4>
                 <p
                   class="font-body-sm text-body-sm text-on-surface-variant mt-1"
                 >
-                  No monthly subscription fee. Just pure appreciation for fine
-                  beans.
+                  Tanpa biaya langganan bulanan. Hanya apresiasi murni terhadap
+                  biji kopi berkualitas
                 </p>
               </div>
-              <button
-                class="w-full md:w-auto px-8 py-3.5 bg-secondary text-surface-bright font-label-md text-label-md uppercase tracking-[0.14em] rounded hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 shadow-md whitespace-nowrap"
-                onclick="
-                  document
-                    .getElementById('signup-modal')
-                    .classList.remove('hidden')
-                "
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfIwfEmZEaifXEHYIa0-2ngL-MAD4c_iJYkUnHyOcysCa0Lcw/viewform"
+                target="_blank"
+                ><button
+                  id=""
+                  class="w-full md:w-auto px-8 py-3.5 bg-secondary text-surface-bright font-label-md text-label-md uppercase tracking-[0.14em] rounded hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 shadow-md whitespace-nowrap"
+                >
+                  Claim your drink
+                </button></a
               >
-                Claim Welcome Drink
-              </button>
             </div>
           </div>
         </section>
@@ -600,12 +532,12 @@
               <div>
                 <span
                   class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary block mb-2"
-                  >Curated Offerings</span
+                  >Penawaran Menarik</span
                 >
                 <h2
                   class="font-headline-lg text-headline-lg text-primary-container"
                 >
-                  Revelation Menu
+                  Best Seller Menu
                 </h2>
               </div>
               <p
@@ -627,7 +559,7 @@
                   <img
                     alt="Signature Iced Latte on travertine stone"
                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBox4KK44bRY2AOnZm0k8vNo-2kKc99MqqbtR44rfP8TIhGROv-4Oj9_37t11oLzBzHnWKZL81Xn4izRxO-DcOauwVpSmFF9xZP-BA4KSIUHtzYrWG2lygPeIvySK35URngExDJMkhAYJA4LMSO-JLLFTtrUpHgA8mc7huMKgNqMYqwSEz6AGcuaxOkyh81KP6wsaG1EEcQcQpHiZogocnMjDXCKViUnHqUIJx5ei-yYHuoaUNXUYvR"
+                    src="assets/images/ice_kopi.png"
                   />
                   <div
                     class="absolute top-4 left-4 bg-primary-container text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
@@ -637,7 +569,7 @@
                 </div>
                 <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
                   <div>
-                    <div class="flex items-center justify-between gap-2 mb-2">
+                    <div class="flex flex-col gap-1 mb-2">
                       <h3
                         class="font-headline-sm text-headline-sm text-primary-container"
                       >
@@ -645,14 +577,15 @@
                       </h3>
                       <span
                         class="font-title-lg text-title-lg text-primary-container font-bold"
-                        >$6.50</span
+                        >Rp. 15.000</span
                       >
                     </div>
                     <p
                       class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
                     >
-                      "Double shot Ethiopia Guji, cold-frothed organic oat milk,
-                      spiced vanilla bean infusion."
+                      "Kombinasi sempurna espresso premium dengan susu segar
+                      yang super lembut dan sentuhan manis khas yang bikin
+                      ketagihan."
                     </p>
                   </div>
                   <div
@@ -660,11 +593,11 @@
                   >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Ethiopia Guji</span
+                      >Premium Espresso</span
                     >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Cold-Frothed</span
+                      >Iced & Creamy</span
                     >
                   </div>
                 </div>
@@ -679,7 +612,7 @@
                   <img
                     alt="Manual Brew V60 in glass server"
                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRtXs166LcT0GY2kJtitXrfSIgUyMRdOUIBInSLNmJa8EdQJM_ipvTvLO3MD4AMLTxPNRn1pJsXNFdwLTaRD81PpBCFbYXFu5wH2YEexagJWaMislRLAFUEdK48k2Hvvh3ARsGJEFKwCzsPDTusUH5HC1lg-gDEls0QvCe5B8griVWaj1eK5Ww7PhZP85WOQlDL011eme0vels__hpxTR7Br71fa5voQhXNTLle2njK4hoJ0uxcVah"
+                    src="assets/images/kopi1.jpg"
                   />
                   <div
                     class="absolute top-4 left-4 bg-secondary text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
@@ -689,22 +622,22 @@
                 </div>
                 <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
                   <div>
-                    <div class="flex items-center justify-between gap-2 mb-2">
+                    <div class="flex flex-col gap-1 mb-2">
                       <h3
                         class="font-headline-sm text-headline-sm text-primary-container"
                       >
-                        Manual Brew V60
+                        Hot Cappuccino
                       </h3>
                       <span
                         class="font-title-lg text-title-lg text-primary-container font-bold"
-                        >$7.25</span
+                        >Rp. 12.000</span
                       >
                     </div>
                     <p
                       class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
                     >
-                      "Single-origin Colombia Geisha, notes of jasmine,
-                      bergamot, and crisp white peach."
+                      "Keseimbangan rasa espresso yang kuat dan froth susu tebal
+                      yang lembut."
                     </p>
                   </div>
                   <div
@@ -712,11 +645,11 @@
                   >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Geisha Reserve</span
+                      >Strong Coffee</span
                     >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Pour Over</span
+                      >Creamy Foam</span
                     >
                   </div>
                 </div>
@@ -731,7 +664,7 @@
                   <img
                     alt="Flaky Butter Croissant on artisanal speckled ceramic plate"
                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkfkSz9WiMbXddOEEbcBLN6AzGs9QhrV9kwVJVki_paDe_DyPCho4CKGcjyjWpQ6PY0knabHeBU8wQoCnb5buIW1yOI00Gtjjyvtdl6EI9-Gtn0EeKjHU7pVk6sReFejBF1sy0mB6kIkDha2PUwUI_zd4jchvdttYGF5Y2-L30SNbywS0DDqu1Lr34urhhk8xuSegH-okdr8gsA66FGBtAkunIiSX9e28XnJhpS3Qnh5Ey7AlRj4gV"
+                    src="assets/images/Crossiant.png"
                   />
                   <div
                     class="absolute top-4 left-4 bg-primary-container text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
@@ -741,22 +674,23 @@
                 </div>
                 <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
                   <div>
-                    <div class="flex items-center justify-between gap-2 mb-2">
+                    <div class="flex flex-col gap-1 mb-2">
                       <h3
                         class="font-headline-sm text-headline-sm text-primary-container"
                       >
-                        Flaky Butter Croissant
+                        Butter Croissant
                       </h3>
                       <span
                         class="font-title-lg text-title-lg text-primary-container font-bold"
-                        >$5.25</span
+                        >Rp. 20.000</span
                       >
                     </div>
                     <p
                       class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
                     >
-                      "AOP Normandy butter, 72-hour slow fermentation, baked
-                      fresh each morning at dawn."
+                      "Pastri klasik Prancis yang renyah di luar, lembut di
+                      dalam, dengan aroma mentega premium yang kaya di setiap
+                      gigitan."
                     </p>
                   </div>
                   <div
@@ -764,11 +698,11 @@
                   >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >AOP Butter</span
+                      >Buttery</span
                     >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Laminated</span
+                      >Fresh Baked</span
                     >
                   </div>
                 </div>
@@ -783,7 +717,7 @@
                   <img
                     alt="Cold Brew Rose drink infusion"
                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter sepia-[0.15]"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBox4KK44bRY2AOnZm0k8vNo-2kKc99MqqbtR44rfP8TIhGROv-4Oj9_37t11oLzBzHnWKZL81Xn4izRxO-DcOauwVpSmFF9xZP-BA4KSIUHtzYrWG2lygPeIvySK35URngExDJMkhAYJA4LMSO-JLLFTtrUpHgA8mc7huMKgNqMYqwSEz6AGcuaxOkyh81KP6wsaG1EEcQcQpHiZogocnMjDXCKViUnHqUIJx5ei-yYHuoaUNXUYvR"
+                    src="assets/images/swiss.jpg"
                   />
                   <div
                     class="absolute top-4 left-4 bg-secondary text-surface-bright font-label-sm text-label-sm uppercase tracking-wider px-3 py-1 rounded-full"
@@ -793,22 +727,22 @@
                 </div>
                 <div class="sm:w-1/2 p-6 lg:p-8 flex flex-col justify-between">
                   <div>
-                    <div class="flex items-center justify-between gap-2 mb-2">
+                    <div class="flex flex-col gap-1 mb-2">
                       <h3
                         class="font-headline-sm text-headline-sm text-primary-container"
                       >
-                        Cold Brew Rose
+                        Swiss Rolls
                       </h3>
                       <span
                         class="font-title-lg text-title-lg text-primary-container font-bold"
-                        >$6.75</span
+                        >Rp. 25.000</span
                       >
                     </div>
                     <p
                       class="font-body-sm text-body-sm text-on-surface-variant italic mb-4"
                     >
-                      "24-hour slow steep, infused with organic damask rose
-                      water and hint of citrus peel."
+                      "Bolu gulung super lembut dengan isian krim premium yang
+                      manisnya pas."
                     </p>
                   </div>
                   <div
@@ -816,11 +750,11 @@
                   >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Slow-Steeped</span
+                      >Soft-Sweet</span
                     >
                     <span
                       class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider"
-                      >Botanical</span
+                      >Cream Filling</span
                     >
                   </div>
                 </div>
@@ -864,31 +798,20 @@
                       <h3
                         class="font-title-lg text-title-lg text-primary-container"
                       >
-                        BR Cafe Atelier
+                        C28 Coffee
                       </h3>
                       <p
                         class="font-body-md text-body-md text-on-surface-variant"
                       >
-                        428 Artisan Lane, Historic District, Suite 100
+                        Simpang IV Sipin, Kec. Telanaipura, Kota Jambi
                       </p>
                     </div>
                   </div>
-                  <span
-                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-900/10 text-emerald-800 font-label-sm text-label-sm font-semibold"
-                  >
-                    <span
-                      class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"
-                    ></span>
-                    Open Now until 10:00 PM
-                  </span>
                 </div>
                 <div
                   class="pt-3 border-t border-outline-variant/20 flex flex-col sm:flex-row sm:items-center justify-between text-body-sm font-body-sm text-on-surface-variant"
                 >
-                  <span>Hours: Mon – Sun: 7:00 AM – 10:00 PM</span>
-                  <span class="mt-1 sm:mt-0 text-primary-container font-medium"
-                    >Valet &amp; Street Parking Available</span
-                  >
+                  <span>Buka: Senin – Minggu: 08.00 – 22.00</span>
                 </div>
               </div>
               <!-- Amenities Pill Tags -->
@@ -917,12 +840,6 @@
                   >
                   Pet Friendly Patio
                 </span>
-                <span
-                  class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-variant/60 text-on-surface font-label-sm text-label-sm uppercase tracking-wider"
-                >
-                  <span class="material-symbols-outlined text-[16px]">eco</span>
-                  Oat &amp; Almond Alternatives
-                </span>
               </div>
               <!-- Minimalist Map Visual Representation -->
               <div
@@ -948,23 +865,23 @@
                 >
                   <div>
                     <p
-                      class="font-title-md text-title-md text-primary-container"
+                      class="font-title-md text-title-md text-primary-container flex items-center gap-2"
                     >
-                      428 Artisan Lane
-                    </p>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant"
-                    >
-                      Steps away from the historic botanical square.
+                      <img
+                        alt="C28 Cafe Logo"
+                        class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                        src="assets/images/Logo.png"
+                      />
+                      The Daily Coffee & Eatery
                     </p>
                   </div>
                   <a
                     class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary-container text-surface-bright rounded text-label-md font-label-md uppercase tracking-wider hover:bg-tertiary transition-colors"
-                    href="https://maps.google.com"
+                    href="https://maps.app.goo.gl/8wnvpWw5GLzrZr5h6"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <span>Get Directions</span>
+                    <span>Lokasi</span>
                     <span class="material-symbols-outlined text-[16px]"
                       >directions</span
                     >
@@ -993,9 +910,6 @@
                   >
                     Community &amp; Workspace
                   </p>
-                  <p class="font-body-sm text-body-sm">
-                    Designed for thoughtful contemplation and connection.
-                  </p>
                 </div>
               </div>
               <!-- Photo 2: Latte Art Craftsmanship -->
@@ -1015,9 +929,6 @@
                   >
                     Precision Craft
                   </p>
-                  <p class="font-body-sm text-body-sm">
-                    Every pour balanced to silky, micro-foam perfection.
-                  </p>
                 </div>
               </div>
             </div>
@@ -1026,6 +937,7 @@
         <!-- SECTION 5: FOOTER -->
         <footer
           class="w-full bg-primary-container text-surface-bright py-20 px-margin lg:px-margin-lg"
+          id="Kontak"
         >
           <div class="max-w-[1440px] mx-auto flex flex-col space-y-16">
             <!-- Top Section: Brand & Newsletter -->
@@ -1038,19 +950,19 @@
                   <div
                     class="w-10 h-10 rounded-full border border-surface/30 flex items-center justify-center font-headline-sm text-surface font-bold tracking-wider"
                   >
-                    BR
+                    C28
                   </div>
                   <span
-                    class="font-headline-md text-headline-md text-surface tracking-wider uppercase"
-                    >BR CAFE</span
+                    class="font-headline-md text-headline-md text-surface tracking-wider"
+                    >Coffee</span
                   >
                 </div>
                 <p
                   class="font-body-md text-body-md text-surface-variant max-w-sm"
                 >
-                  Elevating daily living through single-origin precision
-                  roasting, unhurried hospitality, and serene architectural
-                  spaces.
+                  Setiap cangkir punya cerita. Nikmati racikan kopi pilihan,
+                  sajian yang dibuat dengan perhatian, dan suasana hangat yang
+                  membuatmu ingin tinggal lebih lama.
                 </p>
                 <!-- Social Icons -->
                 <div class="flex items-center gap-4 pt-2">
@@ -1059,38 +971,48 @@
                     class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
                     href="#"
                   >
-                    <span class="font-label-md text-label-md font-bold"
-                      >IG</span
-                    >
+                    <img
+                      class="w-5 h-5 object-contain"
+                      src="assets/images/ig.png"
+                      alt="Instagram"
+                    />
                   </a>
                   <a
-                    aria-label="X"
+                    aria-label="Youtube"
                     class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
                     href="#"
                   >
-                    <span class="font-label-md text-label-md font-bold">X</span>
+                    <img
+                      class="w-5 h-5 object-contain"
+                      src="assets/images/yt.png"
+                      alt="Youtube"
+                    />
                   </a>
                   <a
                     aria-label="TikTok"
                     class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
                     href="#"
                   >
-                    <span class="font-label-md text-label-md font-bold"
-                      >TK</span
-                    >
+                    <img
+                      class="w-5 h-5 object-contain"
+                      src="assets/images/tt.png"
+                      alt="TikTok"
+                    />
                   </a>
                   <a
-                    aria-label="Spotify"
+                    aria-label="Whatsapp"
                     class="w-9 h-9 rounded-full bg-surface/10 flex items-center justify-center hover:bg-secondary transition-colors text-surface"
                     href="#"
                   >
-                    <span class="material-symbols-outlined text-[18px]"
-                      >graphic_eq</span
-                    >
+                    <img
+                      class="w-7 h-7 object-contain"
+                      src="assets/images/wa.png"
+                      alt="Whatsapp"
+                    />
                   </a>
                   <span
                     class="font-label-sm text-label-sm text-surface-variant ml-2"
-                    >@br.cafe</span
+                    >@C28.Coffee</span
                   >
                 </div>
               </div>
@@ -1100,25 +1022,22 @@
               >
                 <span
                   class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary-container mb-2"
-                  >Private Cuppings &amp; Drops</span
+                  >Stay Connected</span
                 >
                 <h4 class="font-headline-sm text-headline-sm text-surface mb-2">
-                  Get invited to reserve bean releases
+                  Ada yang baru di sini!
                 </h4>
                 <p class="font-body-sm text-body-sm text-surface-variant mb-6">
-                  Receive rare harvest notes, invitations to closed door tasting
-                  workshops, and seasonal specials.
+                  Dapatkan kabar tentang menu terbaru, promo, dan berbagai hal
+                  seru langsung dari kami.
                 </p>
                 <form
+                  id="newsletter-form"
                   class="flex flex-col sm:flex-row gap-3"
-                  onsubmit="
-                    event.preventDefault();
-                    alert('Thank you for subscribing to BR Cafe.');
-                  "
                 >
                   <input
                     class="w-full px-4 py-3 rounded bg-surface text-primary-container placeholder:text-on-surface-variant/60 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary"
-                    placeholder="Enter your email address"
+                    placeholder="Masukkan Alamat Email"
                     required=""
                     type="email"
                   />
@@ -1126,7 +1045,7 @@
                     class="px-7 py-3 bg-secondary text-surface font-label-md text-label-md uppercase tracking-wider rounded hover:bg-secondary-container hover:text-on-secondary-container transition-colors whitespace-nowrap shadow-md"
                     type="submit"
                   >
-                    Subscribe
+                    Join
                   </button>
                 </form>
               </div>
@@ -1190,7 +1109,7 @@
               <div class="flex flex-col space-y-3">
                 <span
                   class="font-label-md text-label-md uppercase tracking-wider text-surface font-semibold"
-                  >About BR</span
+                  >About C28 Coffee</span
                 >
                 <a class="hover:text-surface transition-colors" href="#"
                   >Direct-Trade Ethics</a
@@ -1210,11 +1129,9 @@
                   class="font-label-md text-label-md uppercase tracking-wider text-surface font-semibold"
                   >Hours &amp; Location</span
                 >
-                <p class="text-surface">
-                  Monday – Sunday<br />7:00 AM – 10:00 PM
-                </p>
+                <p class="text-surface">Senin – Minggu<br />08.00 - 22.00</p>
                 <p class="text-surface-variant">
-                  428 Artisan Lane, Suite 100<br />Historic District
+                  Simpang IV Sipin, Kec. Telanaipura, Kota Jambi
                 </p>
               </div>
             </div>
@@ -1222,10 +1139,7 @@
             <div
               class="pt-8 border-t border-surface/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-surface-variant font-label-sm text-label-sm"
             >
-              <p>
-                © 2025 BR Cafe Specialty Roasters. All rights reserved. Crafted
-                with care.
-              </p>
+              <p>© 2026 C28 Coffee. All rights reserved. Crafted with care.</p>
               <div class="flex items-center gap-6">
                 <a class="hover:text-surface transition-colors" href="#"
                   >Privacy Notice</a
@@ -1233,14 +1147,12 @@
                 <a class="hover:text-surface transition-colors" href="#"
                   >Terms of Hospitality</a
                 >
-                <a class="hover:text-surface transition-colors" href="#"
-                  >Sourcing Index</a
-                >
               </div>
             </div>
           </div>
         </footer>
-        <!-- SIGNUP MODAL DIALOG (Interactive micro-feature for perks CTA) -->
+
+        <!-- SIGNUP MODAL DIALOG -->
         <div
           class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm"
           id="signup-modal"
@@ -1249,10 +1161,8 @@
             class="relative w-full max-w-lg bg-surface-bright rounded-2xl p-8 border border-primary-container/15 shadow-2xl"
           >
             <button
+              id="close-signup-modal-btn"
               class="absolute top-5 right-5 text-on-surface-variant hover:text-primary-container"
-              onclick="
-                document.getElementById('signup-modal').classList.add('hidden')
-              "
             >
               <span class="material-symbols-outlined text-2xl">close</span>
             </button>
@@ -1272,16 +1182,7 @@
                 complimentary espresso or slow cold brew at our Artisan Lane
                 atelier.
               </p>
-              <form
-                class="flex flex-col gap-4"
-                onsubmit="
-                  event.preventDefault();
-                  alert('Welcome drink barcode sent to your inbox!');
-                  document
-                    .getElementById('signup-modal')
-                    .classList.add('hidden');
-                "
-              >
+              <form id="signup-form" class="flex flex-col gap-4">
                 <div>
                   <label
                     class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-1"
@@ -1332,100 +1233,7 @@
         </div>
       </div>
     </main>
-    <footer
-      class="w-full bg-surface-container-low border-t border-outline-variant/30 mt-space-xl"
-    >
-      <div
-        class="w-full max-w-[1440px] mx-auto px-margin lg:px-margin-lg py-space-xl"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-lg mb-space-xl">
-          <div class="md:col-span-1 flex flex-col gap-space-sm">
-            <div class="flex items-center gap-space-xs">
-              <img
-                alt="BR Cafe Logo"
-                class="h-7 w-auto object-contain"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9HNTlTonNe1o0JpN_LYozBznw7WH5LUKuop8e1OYCrB0ZsBQ1Mikv3csVD5Xs6LQcJfLyozf0TKPopey3grG2cbRoq3gLB23e_zMhsDmlDZ4x8CTiSq01T_junS87CDrhLkgKfSRVE0G4bsmzvkqTbpqmiKNSRpO6i1_Qziynq56icDU8OoAYxfX6FHj0rlXKFnbYbSfd9ZaQYi9YUQ_46M3po5e3_Tus9hPD7MFCOVXXga7VxiK5"
-              /><span
-                class="font-headline-sm text-headline-sm text-primary-container tracking-wider uppercase"
-                >BR CAFE</span
-              >
-            </div>
-            <p
-              class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs"
-            >
-              A sanctuary dedicated to the unhurried craft of single-origin
-              cultivation, slow brews, and intentional community.
-            </p>
-          </div>
-          <div class="flex flex-col gap-space-xs">
-            <span
-              class="font-label-md text-label-md uppercase tracking-[0.12em] text-primary-container mb-space-xs"
-              >Exploration</span
-            ><a
-              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
-              data-path="philosophy"
-              href="#"
-              >Our Philosophy</a
-            ><a
-              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
-              data-path="menu-highlights"
-              href="#"
-              >Seasonal Offerings</a
-            ><a
-              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
-              data-path="visit-us"
-              href="#"
-              >Café Locations</a
-            >
-          </div>
-          <div class="flex flex-col gap-space-xs">
-            <span
-              class="font-label-md text-label-md uppercase tracking-[0.12em] text-primary-container mb-space-xs"
-              >Membership</span
-            ><a
-              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
-              data-path="membership-perks"
-              href="#"
-              >The Coffee Club</a
-            ><a
-              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
-              data-path="membership-perks"
-              href="#"
-              >Roaster Allocations</a
-            ><a
-              class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors"
-              data-path="membership-perks"
-              href="#"
-              >Private Cupping</a
-            >
-          </div>
-          <div class="flex flex-col gap-space-xs">
-            <span
-              class="font-label-md text-label-md uppercase tracking-[0.12em] text-primary-container mb-space-xs"
-              >Hours &amp; Ateliers</span
-            >
-            <p class="font-body-sm text-body-sm text-on-surface-variant">
-              Monday – Friday: 7am — 6pm<br />Saturday – Sunday: 8am — 7pm
-            </p>
-            <p
-              class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs"
-            >
-              hello@brcafe.com
-            </p>
-          </div>
-        </div>
-        <div
-          class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"
-        >
-          <p class="font-body-sm text-body-sm">
-            © 2025 BR Cafe Specialty Roasters. All rights reserved.
-          </p>
-          <div class="flex items-center gap-space-lg font-body-sm text-body-sm">
-            <span>Privacy Policy</span><span>Terms of Service</span
-            ><span>Origin Transparency</span>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- Application logic -->
+    <script src="js/main.js" defer></script>
   </body>
 </html>
