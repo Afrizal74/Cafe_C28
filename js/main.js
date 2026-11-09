@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.getElementById("close-signup-modal-btn");
 
   /** Open the signup modal */
-  function openModal() {
+  function openModal(event) {
+    if (event) event.preventDefault();
     if (signupModal) signupModal.classList.remove("hidden");
   }
 
